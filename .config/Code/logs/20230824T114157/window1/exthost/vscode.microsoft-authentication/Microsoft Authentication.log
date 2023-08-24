@@ -1,0 +1,21 @@
+2023-08-24 11:41:59.790 [info] Reading sessions from secret storage...
+2023-08-24 11:41:59.790 [info] Got 0 stored sessions
+2023-08-24 11:41:59.798 [info] Getting sessions for all scopes...
+2023-08-24 11:41:59.798 [info] Got 0 sessions for all scopes...
+2023-08-24 11:41:59.799 [info] Getting sessions for the following scopes: email offline_access openid profile
+2023-08-24 11:41:59.799 [info] Got 0 sessions for scopes: email offline_access openid profile
+2023-08-24 11:42:23.572 [info] Getting sessions for the following scopes: email offline_access openid profile
+2023-08-24 11:42:23.572 [info] Got 0 sessions for scopes: email offline_access openid profile
+2023-08-24 11:42:25.812 [info] Logging in for the following scopes: email offline_access openid profile
+2023-08-24 11:42:53.526 [info] Exchanging login code for token for scopes: email offline_access openid profile
+2023-08-24 11:42:53.793 [info] Exchanging login code for token (for scopes: email offline_access openid profile) succeeded!
+2023-08-24 11:42:53.793 [info] Setting token for scopes: email offline_access openid profile
+2023-08-24 11:42:53.793 [info] Login successful for scopes: email offline_access openid profile
+2023-08-24 11:42:53.793 [info] Token available from cache (for scopes email offline_access openid profile), expires in 3840000 milliseconds
+2023-08-24 11:42:53.793 [info] Stored token for scopes: email offline_access openid profile
+2023-08-24 11:42:53.799 [info] Getting sessions for the following scopes: email offline_access openid profile
+2023-08-24 11:42:53.799 [info] Got 1 sessions for scopes: email offline_access openid profile
+2023-08-24 11:42:53.799 [info] Token available from cache (for scopes email offline_access openid profile), expires in 3839994 milliseconds
+2023-08-24 11:42:53.800 [info] Getting sessions for the following scopes: email offline_access openid profile
+2023-08-24 11:42:53.800 [info] Got 1 sessions for scopes: email offline_access openid profile
+2023-08-24 11:42:53.800 [info] Token available from cache (for scopes email offline_access openid profile), expires in 3839992 milliseconds

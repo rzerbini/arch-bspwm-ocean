@@ -1,0 +1,5 @@
+2023-08-24 11:43:32.810 [info] update#setState idle
+2023-08-24 11:44:02.815 [info] update#setState checking for updates
+2023-08-24 11:44:03.020 [info] update#setState idle
+2023-08-24 11:44:18.071 [info] Extension host with pid 14772 exited with code: 0, signal: unknown.
+2023-08-24 11:44:18.140 [info] Extension host with pid 14731 exited with code: 0, signal: unknown.

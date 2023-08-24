@@ -1,0 +1,6 @@
+2023-08-24 11:41:58.716 [info] Started initializing default profile extensions in extensions installation folder. file:///home/thor/.vscode/extensions
+2023-08-24 11:41:59.269 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/thor/.vscode/extensions
+2023-08-24 11:42:01.619 [info] [perf] Render performance baseline is 24ms
+2023-08-24 11:42:53.796 [info] Settings Sync: Updated current session f8cdef31-a31e-4b4a-93e4-5f571e91255a/1:live.com:00067FFEAEAE4553/1ff2c30a-8dd4-4c50-a219-3af535466a85
+2023-08-24 11:43:09.386 [error] [medzhidov.font-awesome-codes-html]: Unknown language in `contributes.font-awesome-codes-html.language`. Provided value: pug
+2023-08-24 11:43:09.386 [error] [medzhidov.font-awesome-codes-html]: Unknown language in `contributes.font-awesome-codes-html.language`. Provided value: ejs

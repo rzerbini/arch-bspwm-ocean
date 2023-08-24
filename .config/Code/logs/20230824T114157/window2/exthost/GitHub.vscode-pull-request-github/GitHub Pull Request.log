@@ -1,0 +1,6 @@
+2023-08-24 11:43:12.315 [warning] /home/thor/.ssh/config: ENOENT: no such file or directory, open '/home/thor/.ssh/config'
+2023-08-24 11:43:12.364 [info] Looking for git repository
+2023-08-24 11:43:12.364 [info] Found 0 repositories during activation
+2023-08-24 11:43:12.364 [info] Git repository found, initializing review manager and pr tree view.
+2023-08-24 11:43:16.351 [info] Registering git provider
+2023-08-24 11:43:16.400 [info] Git initialization state changed: state=initialized

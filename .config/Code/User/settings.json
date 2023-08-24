@@ -1,0 +1,14 @@
+{
+    "remote.SSH.remotePlatform": {
+        "192.168.0.53": "linux",
+        "192.168.0.105": "linux",
+        "192.168.0.106": "linux",
+        "192.168.0.194": "linux",
+        "192.168.0.65": "linux"
+    },
+    "editor.fontLigatures": true,
+    "git.enableSmartCommit": true,
+    "editor.fontFamily": "Fira Code",
+    "git.openRepositoryInParentFolders": "always",
+    "git.confirmSync": false
+}

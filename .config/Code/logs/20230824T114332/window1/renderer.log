@@ -1,0 +1,4 @@
+2023-08-24 11:43:34.660 [warning] No search provider registered for scheme: file, waiting
+2023-08-24 11:43:35.274 [error] [medzhidov.font-awesome-codes-html]: Unknown language in `contributes.font-awesome-codes-html.language`. Provided value: pug
+2023-08-24 11:43:35.274 [error] [medzhidov.font-awesome-codes-html]: Unknown language in `contributes.font-awesome-codes-html.language`. Provided value: ejs
+2023-08-24 11:43:36.666 [info] [perf] Render performance baseline is 21ms

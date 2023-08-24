@@ -1,0 +1,6 @@
+2023-08-24 11:43:09.965 [warning] /home/thor/.ssh/config: ENOENT: no such file or directory, open '/home/thor/.ssh/config'
+2023-08-24 11:43:09.965 [info] TemporaryState> Error in initialization: Unable to delete nonexistent file 'vscode-userdata:/home/thor/.config/Code/User/globalStorage/github.vscode-pull-request-github/temp'
+2023-08-24 11:43:09.993 [info] Looking for git repository
+2023-08-24 11:43:09.993 [info] Found 0 repositories during activation
+2023-08-24 11:43:09.993 [info] Git repository found, initializing review manager and pr tree view.
+2023-08-24 11:43:09.994 [info] Registering git provider
