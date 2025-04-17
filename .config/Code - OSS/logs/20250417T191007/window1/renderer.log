@@ -1,0 +1,5 @@
+2025-04-17 19:10:09.224 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-04-17 19:10:09.369 [info] Started local extension host with pid 1069.
+2025-04-17 19:10:09.442 [info] Started initializing default profile extensions in extensions installation folder. file:///home/thor/.vscode-oss/extensions
+2025-04-17 19:10:09.784 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/thor/.vscode-oss/extensions
+2025-04-17 19:10:12.539 [info] [perf] Render performance baseline is 13ms
