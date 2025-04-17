@@ -1,14 +1,16 @@
 
-# Install Bspwm on Archlinux
+### Install Bspwm on Archlinux
 sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg-xinit kitty
 
-# copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
+### copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
+
 cd ~/.config/ && mkdir -p bspwm sxhkd
 cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
 chmod u+x ~/.config/bspwm/bspwmrc
 
-# Keybindings: sxhkdrc
+### Keybindings: sxhkdrc
+
 nano ~/.config/sxhkd/sxhkdrc
 
 Config file: bspwmrc
