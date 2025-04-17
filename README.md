@@ -1,32 +1,32 @@
 
-Install Bspwm on Archlinux
-> sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg-xinit kitty
-[opy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
+# Install Bspwm on Archlinux
+sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg-xinit kitty
 
-> cd ~/.config/ && mkdir -p bspwm sxhkd
-> cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
-> cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
-> chmod u+x ~/.config/bspwm/bspwmrc
-Keybindings: sxhkdrc
-> nano ~/.config/sxhkd/sxhkdrc
+# copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
+cd ~/.config/ && mkdir -p bspwm sxhkd
+cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
+cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
+chmod u+x ~/.config/bspwm/bspwmrc
+
+# Keybindings: sxhkdrc
+nano ~/.config/sxhkd/sxhkdrc
+
 Config file: bspwmrc
 Check the config file:
+nano ~/.config/bspwm/bspwmrc
 
-> nano ~/.config/bspwm/bspwmrc
-Declare the apps to autostart when launching a session:
-
-make sure sxhkdrc is launched at start: pgrep -x sxhkd > /dev/null || sxhkd &
-compositing manager: compton --backend glx --vsync opengl-swc &
-usr/lib/xfce-polkit/xfce-polkit &
-bar (here polybar, throught a script): ~/bin/polybar.launch.sh &
-wallpaper: nitrogen --restore &
-Picom
+# Declare the apps to autostart when launching a session:
+make sure sxhkdrc is launched at start:     pgrep -x sxhkd > /dev/null || sxhkd &
+compositing manager:                        compton --backend glx --vsync opengl-swc &
+                                            usr/lib/xfce-polkit/xfce-polkit &
+bar (here polybar, throught a script):      ~/bin/polybar.launch.sh &
+wallpaper:                                  nitrogen --restore &
+Picom:
 The default configuration is available in /etc/xdg/picom.conf. For modifications, it can be copied to ~/.config/picom/picom.conf or ~/.config/picom.conf.
-
 To use another custom configuration file with picom, use the following command:
-
 picom --$HOME/.config/picom/picom.conf
-Bar: polybar
+
+# Bar: polybar
 We won’t use the default bspwm bar, but Polybar: highy customizable and documented. And fully compatible with bspwm.
 
 mkdir ~/.config/polybar
