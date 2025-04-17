@@ -5,8 +5,11 @@ sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmu
 ### copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
 
 cd ~/.config/ && mkdir -p bspwm sxhkd
+
 cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
+
 cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
+
 chmod u+x ~/.config/bspwm/bspwmrc
 
 ### Keybindings: sxhkdrc
