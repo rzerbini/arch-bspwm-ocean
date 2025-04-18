@@ -60,31 +60,36 @@ Done, now it’s time to work on the config file.
 Install a NerdFont to display icons on your bar:
 
 > wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
-> 
-dtrx JetBrainsMono.zip
+> dtrx JetBrainsMono.zip
 
 > sudo cp -avr JetBrainsMono/ /usr/share/fonts/truetype/
 > fc-cache -f -v
 > rm JetBrainsMono.zip
-Compositor: compton
+
+# Compositor: compton
 I’ve tried a few compositor, mostly forks of Picom adding blur, rounded corners and animations. Heavy on CPU, mostly work in progress, sometimes impressive, but in the end an optimized compton.conf is the best solution.
 
 # shorter shadows
+```` 
 shadow-radius = 5;
 shadow-offset-x = -5;
 shadow-offset-y = -5;
 shadow-opacity = 0.8;
+```
+```
 # faster animations
 fade-in-step = 0.07;
 fade-out-step = 0.07;
-Launcher: rofi
+```
+
+# Launcher: rofi
 Rofi is a fantastic customizable launcher for Linux, we use it instead of dmenu and to manage additional menus such as Session menu.
 
 To launch Rofi open a terminal and enter: rofi -show drun
 
 This will launch Rofi in desktop run mode: it allows users to quickly search and launch an application from the freedesktop.org Desktop Entries. These are used by most Desktop Environments to populate launchers and menus. Drun mode features: favorites list, with frequently used programs sorted on top auto starting terminal applications in a terminal Rofi config file is in: ~/.config/rofi/config.rasi. You may compose multiple themes and call them in CLI: rofi -shwo drun -theme path/to/file.rasi I’m using this option for bspwm session menu.
 
-ScreenLocker: i3lock
+# ScreenLocker: i3lock
 Fantastic screenlocker, to use as it is, and before suspending your machine. It only takes PNG files as background image.
 
 lock: i3lock –image ~/Pictures/Backgrounds/lock.png
@@ -92,6 +97,7 @@ lock: i3lock –image ~/Pictures/Backgrounds/lock.png
 lock & suspend: i3lock –image ~/Pictures/Backgrounds/lock.png && sudo pm-suspend
 
 ref: https://medium.com/tech-notes-and-geek-stuff/installing-bspwm-on-debian-fd6a315f6903
+
 https://github.com/thespation/dpux_bspwm/tree/main
 
  see also for ArchLinux https://www.youtube.com/watch?v=PLBm0C5Gv58\](2023-07-23-bspwm-debian.md)](2023-07-23-bspwm-debian.md)
