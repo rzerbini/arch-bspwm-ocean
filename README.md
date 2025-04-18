@@ -37,24 +37,32 @@ picom --$HOME/.config/picom/picom.conf
 
 # Bar: polybar
 We won’t use the default bspwm bar, but Polybar: highy customizable and documented. And fully compatible with bspwm.
-
+```
 mkdir ~/.config/polybar
 cp /etc/polybar/config.ini ~/.config/polybar/
 nano ~/.config/polybar/config
+```
 We start Polybar through a script referenced in bspwmrc:
 
 #!/usr/bin/env sh
+
 # Terminate already running bar instances
 killall -q polybar
+
 # Wait until the processes have been shut down
 while pgrep -x polybar >/dev/null; do sleep 1; done
+
 # Launch: 'top' is the name of my Polybar
 polybar &
+
 Done, now it’s time to work on the config file.
 
 Install a NerdFont to display icons on your bar:
+
 > wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+> 
 dtrx JetBrainsMono.zip
+
 > sudo cp -avr JetBrainsMono/ /usr/share/fonts/truetype/
 > fc-cache -f -v
 > rm JetBrainsMono.zip
