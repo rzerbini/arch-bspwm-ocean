@@ -76,8 +76,8 @@ shadow-offset-x = -5;
 shadow-offset-y = -5;
 shadow-opacity = 0.8;
 ```
-```
 # faster animations
+```
 fade-in-step = 0.07;
 fade-out-step = 0.07;
 ```
