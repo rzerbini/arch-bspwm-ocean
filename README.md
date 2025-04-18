@@ -70,7 +70,7 @@ Install a NerdFont to display icons on your bar:
 I’ve tried a few compositor, mostly forks of Picom adding blur, rounded corners and animations. Heavy on CPU, mostly work in progress, sometimes impressive, but in the end an optimized compton.conf is the best solution.
 
 # shorter shadows
-```` 
+```
 shadow-radius = 5;
 shadow-offset-x = -5;
 shadow-offset-y = -5;
