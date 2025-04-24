@@ -1,6 +1,10 @@
 
-### Install Bspwm on Archlinux
+#### Install Bspwm on Archlinux
+
+### Install
+```text
 sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg-xinit kitty xorg-xrandr xorg-xsetroot bash-completion
+```
 
 ### copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
 ```
