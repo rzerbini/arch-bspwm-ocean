@@ -25,9 +25,10 @@ nano ~/.config/bspwm/bspwmrc
 ## Declare the apps to autostart when launching a session:
 |  Tipo:                                 | Ação:                                                |
 | ---------------------------------------|------------------------------------------------------|
-| make sure sxhkdrc is launched at start:| pgrep -x sxhkd > /dev/null || sxhkd &                | 
-| compositing manager:                   | compton --backend glx --vsync opengl-swc &           |
+| ==make sure sxhkdrc is launched at start:| pgrep -x sxhkd > /dev/null || sxhkd &                | 
+| ==compositing manager:                   | compton --backend glx --vsync opengl-swc &           |
 |                                        | usr/lib/xfce-polkit/xfce-polkit &                    |
+| xrandr:                                | xrandr -s 1920x1080 &                                |                  
 | bar (here polybar, throught a script): | ~/.config/polybar/launch.sh &                        |
 | wallpaper:                             | nitrogen --restore &                                 |
 | Picom:  the default configuration is available in /etc/xdg/picom.conf. For modifications, it can be copied to ~/.config/picom/picom.conf or ~/.config/picom.conf.To use another custom configuration file with picom, use the following command:| picom --config $HOME/.config/picom/picom.conf|
