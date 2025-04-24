@@ -67,14 +67,14 @@ Done, now it’s time to work on the config file.
 ## Compositor: compton
 I’ve tried a few compositor, mostly forks of Picom adding blur, rounded corners and animations. Heavy on CPU, mostly work in progress, sometimes impressive, but in the end an optimized compton.conf is the best solution.
 
-## shorter shadows
+### shorter shadows
 ```
 shadow-radius = 5;
 shadow-offset-x = -5;
 shadow-offset-y = -5;
 shadow-opacity = 0.8;
 ```
-## faster animations
+### faster animations
 ```
 fade-in-step = 0.07;
 fade-out-step = 0.07;
