@@ -1,8 +1,14 @@
 #! /bin/sh
 
 pgrep -x sxhkd > /dev/null || sxhkd &
+compton --backend glx --vsync opengl-swc &
+usr/lib/xfce-polkit/xfce-polkit &
+~/.config/polybar/launch.sh &
+xsetroot -cursor_name left_ptr &
 nitrogen --restore &
 xrandr -s 1920x1080 &
+
+
 xsetroot -cursor_name left_ptr &
 $HOME/.config/polybar/launch.sh
 
