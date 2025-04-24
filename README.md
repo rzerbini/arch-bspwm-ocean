@@ -1,5 +1,5 @@
 
-#### Install Bspwm on Archlinux
+## Install Bspwm on Archlinux
 
 ### Install
 ```text
