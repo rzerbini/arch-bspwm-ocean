@@ -1,6 +1,6 @@
 
 ### Install Bspwm on Archlinux
-sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg-xinit kitty
+sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg-xinit kitty xorg-xrandr
 
 ### copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
 ```
@@ -23,7 +23,7 @@ make sure sxhkdrc is launched at start:     pgrep -x sxhkd > /dev/null || sxhkd 
 
 compositing manager:                        compton --backend glx --vsync opengl-swc &
                                             usr/lib/xfce-polkit/xfce-polkit &
-bar (here polybar, throught a script):      ~/bin/polybar.launch.sh &
+bar (here polybar, throught a script):      ~/.config/polybar/launch.sh &
 wallpaper:                                  nitrogen --restore &
 
 Picom:
