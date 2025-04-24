@@ -44,13 +44,13 @@ We start Polybar through a script referenced in bspwmrc:
 
 #!/usr/bin/env sh
 
-# Terminate already running bar instances
+### Terminate already running bar instances
 killall -q polybar
 
-# Wait until the processes have been shut down
+### Wait until the processes have been shut down
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
-# Launch: 'top' is the name of my Polybar
+### Launch: 'top' is the name of my Polybar
 polybar &
 
 Done, now it’s time to work on the config file.
