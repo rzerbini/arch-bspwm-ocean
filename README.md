@@ -57,7 +57,7 @@ Done, now it’s time to work on the config file.
 
 ## Install a NerdFont to display icons on your bar:
 
-> wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip
+> wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip\
 > dtrx JetBrainsMono.zip
 
 > sudo cp -avr JetBrainsMono/ /usr/share/fonts/truetype/
