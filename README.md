@@ -100,7 +100,10 @@ https://github.com/thespation/dpux_bspwm/tree/main
 
  see also for ArchLinux https://www.youtube.com/watch?v=PLBm0C5Gv58\](2023-07-23-bspwm-debian.md)](2023-07-23-bspwm-debian.md)
 
-## Theme
+## Themes
 sudo pacman -S lxappearance-gtk3
 
 use lxappearance
+
+# Arc Themes
+https://github.com/arcolinux/arcolinux-arc-themes
