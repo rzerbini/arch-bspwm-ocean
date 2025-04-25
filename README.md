@@ -60,9 +60,9 @@ Done, now it’s time to work on the config file.
 > wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip \
 > dtrx JetBrainsMono.zip
 
-> sudo cp -avr JetBrainsMono/ /usr/share/fonts/truetype/
-> fc-cache -f -v
-> rm JetBrainsMono.zip
+> sudo cp -avr JetBrainsMono/ /usr/share/fonts/truetype/ \
+> fc-cache -f -v \
+> rm JetBrainsMono.zip \
 
 ## Compositor: compton
 I’ve tried a few compositor, mostly forks of Picom adding blur, rounded corners and animations. Heavy on CPU, mostly work in progress, sometimes impressive, but in the end an optimized compton.conf is the best solution.
