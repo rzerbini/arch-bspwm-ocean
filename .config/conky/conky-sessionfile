@@ -1,0 +1,1 @@
+conky -c /home/thor/.config/conky/Arco-Powered-By.conkyrc & sleep 1s
