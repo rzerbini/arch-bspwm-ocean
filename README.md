@@ -105,10 +105,10 @@ sudo pacman -S lxappearance-gtk3
 
 use lxappearance
 
-# Arc Themes
+## Arc Themes
 https://github.com/arcolinux/arcolinux-arc-themes
 
-### How to install GitHub Desktop?
+## How to install GitHub Desktop?
 
 1. Install Prerequisites:- \
 To install GitHub Desktop you need to install yay package manager in Arch. \
