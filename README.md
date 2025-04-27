@@ -107,3 +107,29 @@ use lxappearance
 
 # Arc Themes
 https://github.com/arcolinux/arcolinux-arc-themes
+
+### How to install GitHub Desktop?
+
+1. Install Prerequisites:- \
+To install GitHub Desktop you need to install yay package manager in Arch. \
+Just follow the below command to install yay package manager.
+
+```
+sudo pacman -Syu 
+sudo pacman -S --needed --noconfirm base-devel git 
+git clone https://aur.archlinux.org/yay-git.git 
+sudo mv yay-git /opt/ 
+cd /opt/yay-git 
+makepkg -si 
+```
+
+install yay package manager in arch linux
+To confirm the the installation of yay package manager just type
+
+sudo yay \
+
+in your terminal.     
+
+https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
+
+
