@@ -59,8 +59,8 @@ Done, now it’s time to work on the config file.
 
 ## Install a NerdFont to display icons on your bar:
 
-sudo pacman -S nerd-fonts \
-use number 28 Firacode
+> sudo pacman -S nerd-fonts \
+> use number 28 Firacode
 
 > wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip \
 > dtrx JetBrainsMono.zip
