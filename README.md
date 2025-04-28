@@ -3,7 +3,7 @@
 
 ### Install
 ```text
-sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar xorg xorg-xinit kitty xorg-xrandr xorg-xsetroot bash-completion -y
+sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar alacritty xorg xorg-xinit kitty xorg-xrandr xorg-xsetroot bash-completion -y
 ```
 
 ### copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
@@ -27,6 +27,7 @@ nano ~/.config/bspwm/bspwmrc
 | :----------------------------------------------------- | :------------------------------------------|
 | make sure sxhkdrc is launched at start:                | pgrep -x sxhkd > /dev/null || sxhkd &      | 
 | compositing manager:                                   | compton --backend glx --vsync opengl-swc & |
+|                                                        | picom --config $HOME/.config/picom/picom.conf & |
 |                                                        | usr/lib/xfce-polkit/xfce-polkit &          |
 | xrandr:                                                | xrandr -s 920x1080 &                       |
 | bar (here polybar, throught a script):                 | ~/.config/polybar/launch.sh &              |
