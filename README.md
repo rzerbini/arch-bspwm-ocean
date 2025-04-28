@@ -46,18 +46,21 @@ We start Polybar through a script referenced in bspwmrc:
 
 #!/usr/bin/env sh
 
-### Terminate already running bar instances
+#### Terminate already running bar instances
 killall -q polybar
 
-### Wait until the processes have been shut down
+#### Wait until the processes have been shut down
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
-### Launch: 'top' is the name of my Polybar
+#### Launch: 'top' is the name of my Polybar
 polybar &
 
 Done, now it’s time to work on the config file.
 
 ## Install a NerdFont to display icons on your bar:
+
+sudo pacman -S nerd-fonts \
+use number 28 Firacode
 
 > wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip \
 > dtrx JetBrainsMono.zip
