@@ -3,7 +3,7 @@
 
 ### Install
 ```text
-sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar alacritty xorg xorg-xinit kitty xorg-xrandr xorg-xsetroot bash-completion -y
+sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar alacritty xorg xorg-xinit kitty xorg-xrandr xorg-xsetroot bash-completion xfce4-terminal -y
 ```
 
 ### copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
