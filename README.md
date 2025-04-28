@@ -12,6 +12,7 @@ cd ~/.config/ && mkdir -p bspwm sxhkd
 cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
 chmod u+x ~/.config/bspwm/bspwmrc
+chmod u+x ~/.config/polybar/launch.sh
 ```
 
 ### Keybindings: sxhkdrc
