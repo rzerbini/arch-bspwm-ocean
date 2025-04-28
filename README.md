@@ -138,3 +138,8 @@ in your terminal.
 https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
 
 
+## Install the Display Manager
+$ sudo pacman -S lxdm \
+$ sudo systemctl enable lxdm \
+
+https://github.com/K4rlosReyes/arch-bspwm
