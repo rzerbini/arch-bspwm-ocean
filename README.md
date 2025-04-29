@@ -152,9 +152,17 @@ in your terminal.
 https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
 
 
-## Install the Display Manager
+## Install the Display Manager lxdm
 
 > sudo pacman -S lxdm \
 > sudo systemctl enable lxdm \
 
 https://github.com/K4rlosReyes/arch-bspwm
+
+## Instal opt lightdm
+
+> sudo pacman -S lightdm
+> sudo pacman -S lightdm-gtk-greeter
+> sudo systemctl enable lightdm
+> sudo systemctl start lightdm
+
