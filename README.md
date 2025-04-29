@@ -159,10 +159,10 @@ https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch
 
 https://github.com/K4rlosReyes/arch-bspwm
 
-## Instal opt lightdm
+## Instal optional lightdm
 
-> sudo pacman -S lightdm
-> sudo pacman -S lightdm-gtk-greeter
-> sudo systemctl enable lightdm
-> sudo systemctl start lightdm
+> sudo pacman -S lightdm \
+> sudo pacman -S lightdm-gtk-greeter \
+> sudo systemctl enable lightdm \
+> sudo systemctl start lightdm \
 
