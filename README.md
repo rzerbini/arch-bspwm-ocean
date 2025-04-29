@@ -11,10 +11,15 @@ sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmu
 cd ~/.config/ && mkdir -p bspwm sxhkd
 cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
+```
+Set to executable
+```
 chmod u+x ~/.config/bspwm/bspwmrc
 chmod u+x ~/.config/polybar/launch.sh
+chmod u+x ~/.config/rofi/powermenu/powermenu.sh
+chmod u+x /usr/local/bin/conky-rotate
+chmod u+x /usr/local/bin/conky-toggle
 ```
-
 ### Keybindings: sxhkdrc
 
 nano ~/.config/sxhkd/sxhkdrc
