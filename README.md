@@ -1,12 +1,12 @@
 
-## Install Bspwm on Archlinux
+### Install Bspwm on Archlinux
 
-### Install
+## Install
 ```text
 sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar alacritty xorg xorg-xinit kitty xorg-xrandr xorg-xsetroot bash-completion xfce4-terminal -y
 ```
 
-### copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
+Copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
 ```
 cd ~/.config/ && mkdir -p bspwm sxhkd
 cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
@@ -20,12 +20,10 @@ chmod u+x ~/.config/rofi/powermenu/powermenu.sh
 chmod u+x /usr/local/bin/conky-rotate
 chmod u+x /usr/local/bin/conky-toggle
 ```
-### Keybindings: sxhkdrc
+## Keybindings: sxhkdrc
 
 nano ~/.config/sxhkd/sxhkdrc
-cd
-Config file: bspwmrc
-Check the config file:
+
 nano ~/.config/bspwm/bspwmrc
 
 ## Declare the apps to autostart when launching a session:
@@ -137,14 +135,14 @@ install yay package manager in arch linux
 To confirm the the installation of yay package manager just type
 
 sudo yay \
-
 in your terminal.     
 
 https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
 
 
 ## Install the Display Manager
-$ sudo pacman -S lxdm \
-$ sudo systemctl enable lxdm \
+
+> sudo pacman -S lxdm \
+> sudo systemctl enable lxdm \
 
 https://github.com/K4rlosReyes/arch-bspwm
