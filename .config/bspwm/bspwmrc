@@ -7,7 +7,7 @@ usr/lib/xfce-polkit/xfce-polkit &
 xsetroot -cursor_name left_ptr &
 nitrogen --restore &
 xrandr -s 1920x1080 &
-
+conky -c $HOME/.config/bspwm/system-overview &
 
 xsetroot -cursor_name left_ptr &
 $HOME/.config/polybar/launch.sh

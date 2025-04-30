@@ -1,25 +1,29 @@
 
-## Install Bspwm on Archlinux
+### Install Bspwm on Archlinux
 
-### Install
+## Install
 ```text
-sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar alacritty xorg xorg-xinit kitty xorg-xrandr xorg-xsetroot bash-completion -y
+sudo pacman -S bspwm sxhkd polybar picom rofi dunst nitrogen i3lock redshift cmus ranger dmenu thunar alacritty xorg xorg-xinit kitty xorg-xrandr xorg-xsetroot bash-completion xfce4-terminal -y
 ```
 
-### copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
+Copy the example configuration to your ~/.config folder and make sure bspwmrc is executable :
 ```
 cd ~/.config/ && mkdir -p bspwm sxhkd
 cp /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/
 cp /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/
-chmod u+x ~/.config/bspwm/bspwmrc
 ```
-
-### Keybindings: sxhkdrc
+Set to executable
+```
+chmod u+x ~/.config/bspwm/bspwmrc
+chmod u+x ~/.config/polybar/launch.sh
+chmod u+x ~/.config/rofi/powermenu/powermenu.sh
+chmod u+x /usr/local/bin/conky-rotate
+chmod u+x /usr/local/bin/conky-toggle
+```
+## Keybindings: sxhkdrc
 
 nano ~/.config/sxhkd/sxhkdrc
-cd
-Config file: bspwmrc
-Check the config file:
+
 nano ~/.config/bspwm/bspwmrc
 
 ## Declare the apps to autostart when launching a session:
@@ -41,22 +45,38 @@ mkdir ~/.config/polybar
 cp /etc/polybar/config.ini ~/.config/polybar/
 nano ~/.config/polybar/config
 ```
-We start Polybar through a script referenced in bspwmrc:
+#### We start Polybar through a script referenced in ~/.config/polybar/launch.sh:
+```
+#!/usr/bin/env bash
 
-#!/usr/bin/env sh
+# Terminate already running bar instances
+# If all your bars have ipc enabled, you can use 
+polybar-msg cmd quit
+# Otherwise you can use the nuclear option:
+# killall -q polybar
 
-### Terminate already running bar instances
+# Launch bar1 and bar2
+echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
+polybar example 2>&1 | tee -a /tmp/polybar1.log & disown
+#polybar bar2 2>&1 | tee -a /tmp/polybar2.log & disown
+
+echo "Bars launched..."
+```
+#### Terminate already running bar instances
 killall -q polybar
 
-### Wait until the processes have been shut down
+#### Wait until the processes have been shut down
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
-### Launch: 'top' is the name of my Polybar
+#### Launch: 'top' is the name of my Polybar
 polybar &
 
 Done, now it’s time to work on the config file.
 
 ## Install a NerdFont to display icons on your bar:
+
+> sudo pacman -S nerd-fonts \
+> use number 28 Firacode
 
 > wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip \
 > dtrx JetBrainsMono.zip
@@ -95,11 +115,10 @@ lock: i3lock –image ~/Pictures/Backgrounds/lock.png
 
 lock & suspend: i3lock –image ~/Pictures/Backgrounds/lock.png && sudo pm-suspend
 
-ref: https://medium.com/tech-notes-and-geek-stuff/installing-bspwm-on-debian-fd6a315f6903
-
-https://github.com/thespation/dpux_bspwm/tree/main
-
- see also for ArchLinux https://www.youtube.com/watch?v=PLBm0C5Gv58\](2023-07-23-bspwm-debian.md)](2023-07-23-bspwm-debian.md)
+ref:\
+  https://medium.com/tech-notes-and-geek-stuff/installing-bspwm-on-debian-fd6a315f6903 \
+  https://github.com/thespation/dpux_bspwm/tree/main \
+  see also for ArchLinux https://www.youtube.com/watch?v=PLBm0C5Gv58\](2023-07-23-bspwm-debian.md)](2023-07-23-bspwm-debian.md) \
 
 ## Themes
 sudo pacman -S lxappearance-gtk3
@@ -128,9 +147,22 @@ install yay package manager in arch linux
 To confirm the the installation of yay package manager just type
 
 sudo yay \
-
 in your terminal.     
 
 https://analyticalnahid.medium.com/how-to-install-git-and-github-desktop-in-arch-linux-bb70c56751d8
 
+
+## Install the Display Manager lxdm
+
+> sudo pacman -S lxdm \
+> sudo systemctl enable lxdm \
+
+https://github.com/K4rlosReyes/arch-bspwm
+
+## Instal optional lightdm
+
+> sudo pacman -S lightdm \
+> sudo pacman -S lightdm-gtk-greeter \
+> sudo systemctl enable lightdm \
+> sudo systemctl start lightdm \
 
