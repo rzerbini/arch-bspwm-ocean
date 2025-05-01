@@ -168,7 +168,7 @@ https://github.com/K4rlosReyes/arch-bspwm
 
 ## Modify the prompt "ps1"
 
-# Custom bash prompt via kirsle.net/wizards/ps1.html
+### Custom bash prompt via kirsle.net/wizards/ps1.html
 
 > export PS1="\[$(tput bold)\]\[$(tput setaf 2)\][\u@\h \W]\\$ \[$(tput sgr0)\]"
 
